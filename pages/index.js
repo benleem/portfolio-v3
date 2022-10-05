@@ -68,7 +68,7 @@ export default function Home() {
 											repeat: Infinity,
 										}}
 									>
-										{"<----"}
+										{"<-----"}
 									</motion.p>
 								</li>
 							</ul>

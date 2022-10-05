@@ -81,6 +81,7 @@
 }
 
 .bouncingArrow {
+	z-index: -1;
 	position: relative;
 	top: -2px;
 }
