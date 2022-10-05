@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import Header from "../components/Header";
 
@@ -56,6 +57,19 @@ export default function Home() {
 											Email
 										</a>
 									</Link>
+								</li>
+								<li className={styles.socialListItem}>
+									<motion.p
+										className={styles.bouncingArrow}
+										initial={{ x: [0] }}
+										animate={{ x: [100, 0, 100] }}
+										transition={{
+											duration: 2,
+											repeat: Infinity,
+										}}
+									>
+										{"<----"}
+									</motion.p>
 								</li>
 							</ul>
 						</div>

@@ -60,11 +60,12 @@
 }
 
 .socialListItem {
-	padding-right: 1rem;
+	margin-left: 1rem;
 	display: inline-block;
 }
-.socialListItem:last-child {
-	padding-right: 0rem;
+
+.socialListItem:first-child {
+	margin-left: 0;
 }
 
 .socialLink {
@@ -75,6 +76,11 @@
 
 .socialLink:hover {
 	color: #b16036;
+}
+
+.bouncingArrow {
+	position: relative;
+	top: -2px;
 }
 
 /* Hero Right */
