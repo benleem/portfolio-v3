@@ -3,10 +3,53 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
 	/* box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25); */
+}
+
+.contentWrapper {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	border-bottom: 1px solid white;
+	margin: auto;
+}
+
+.navListItem {
+	display: inline-block;
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+.navLink::after {
+	content: "";
+	display: block;
+	position: relative;
+	top: -0.55rem;
+	width: 0%;
+	height: 2px;
+	color: white;
+	background-color: white;
+	transition: width 0.5s;
+}
+
+.navLink:hover::after {
+	width: 100%;
+}
+
+.navLinkActive::after {
+	content: "";
+	display: block;
+	position: relative;
+	top: -0.55rem;
+	width: 100%;
+	height: 2px;
+	color: white;
+	background-color: white;
+	transition: width 0.5s;
 }

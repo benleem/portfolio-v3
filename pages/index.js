@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Ben Marshall - Home</title>
+				<title>Ben Marshall</title>
 				<meta
 					name="description"
 					content="Ben Marshall's portfolio, made with ❤️"
