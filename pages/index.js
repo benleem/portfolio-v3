@@ -75,59 +75,21 @@ export default function Home() {
 						</div>
 						<div className={styles.heroRight}>
 							<p className={styles.descriptionMedium}>
-								Donec ac scelerisque leo. Vestibulum in faucibus diam. Nunc sit
-								amet venenatis dolor. Praesent pharetra mi quis blandit pretium.
-								Morbi venenatis in tellus at finibus. Integer at nunc ac felis
-								ullamcorper efficitur.
+								I'm a front-end web developer, and JAM stack enthusiast. I have
+								a passion for all things technology, especially programming.
+								Recently, I have been loving the DALL·E 2 tool to create cool
+								art! 🎨🔥🥶
 							</p>
 							<button className={styles.pillButton}>Contact Me</button>
 						</div>
 					</div>
-					<div className={styles.about}>
+					<div className={styles.about} id="about">
 						<p>
-							hello this is the about section lmaoa asd asdasdadasd dasdadasdasd
-							asdas Donec ac scelerisque leo. Vestibulum in faucibus diam. Nunc
-							sit amet venenatis dolor. Praesent pharetra mi quis blandit
-							pretium. Morbi venenatis in tellus at finibus. Integer at nunc ac
-							felis ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum
-							in faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra
-							mi quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.Donec ac
-							scelerisque leo. Vestibulum in faucibus diam. Nunc sit amet
-							venenatis dolor. Praesent pharetra mi quis blandit pretium. Morbi
-							venenatis in tellus at finibus. Integer at nunc ac felis
-							ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum in
-							faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra mi
-							quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.Donec ac
-							scelerisque leo. Vestibulum in faucibus diam. Nunc sit amet
-							venenatis dolor. Praesent pharetra mi quis blandit pretium. Morbi
-							venenatis in tellus at finibus. Integer at nunc ac felis
-							ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum in
-							faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra mi
-							quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.Donec ac
-							scelerisque leo. Vestibulum in faucibus diam. Nunc sit amet
-							venenatis dolor. Praesent pharetra mi quis blandit pretium. Morbi
-							venenatis in tellus at finibus. Integer at nunc ac felis
-							ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum in
-							faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra mi
-							quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.Donec ac
-							scelerisque leo. Vestibulum in faucibus diam. Nunc sit amet
-							venenatis dolor. Praesent pharetra mi quis blandit pretium. Morbi
-							venenatis in tellus at finibus. Integer at nunc ac felis
-							ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum in
-							faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra mi
-							quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.Donec ac
-							scelerisque leo. Vestibulum in faucibus diam. Nunc sit amet
-							venenatis dolor. Praesent pharetra mi quis blandit pretium. Morbi
-							venenatis in tellus at finibus. Integer at nunc ac felis
-							ullamcorper efficitur.Donec ac scelerisque leo. Vestibulum in
-							faucibus diam. Nunc sit amet venenatis dolor. Praesent pharetra mi
-							quis blandit pretium. Morbi venenatis in tellus at finibus.
-							Integer at nunc ac felis ullamcorper efficitur.
+							Hi, my name is Ben. I strive to adapt web applications to be just
+							as good on mobile. I also specialize in utilizing APIs in the
+							front-end to create a seamless user experience. Learning new
+							technologies is my passion, and I'm always looking for new ways to
+							improve my toolkit.
 						</p>
 					</div>
 				</section>
