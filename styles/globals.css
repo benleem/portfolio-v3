@@ -4,6 +4,12 @@
 ---FONTS---
 font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
+font-family: "Six Caps", sans-serif;
+*/
+
+/* 
+---Colors--- 
+#b16036
 */
 
 html,
@@ -36,6 +42,8 @@ p {
 * {
 	box-sizing: border-box;
 }
+
+/* Media queries */
 
 @media (prefers-color-scheme: dark) {
 	html {

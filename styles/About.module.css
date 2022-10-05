@@ -1,0 +1,30 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.columnTop {
+	width: max-content;
+}
+
+.titleMedium {
+	composes: titleMedium from "./shared.css";
+}
+
+.name {
+	composes: name from "./shared.css";
+	text-align: end;
+	color: #b16036;
+}
+
+.descriptionMedium {
+	composes: descriptionMedium from "./shared.css";
+	text-align: start;
+	max-width: 500px;
+	text-indent: 150px;
+}

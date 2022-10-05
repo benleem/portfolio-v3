@@ -22,9 +22,7 @@
 }
 
 .name {
-	font-family: "Playfair Display", serif;
-	font-weight: 600;
-	font-size: 1.1rem;
+	composes: name from "./shared.css";
 }
 
 .navListItem {
