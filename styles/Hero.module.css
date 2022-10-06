@@ -22,15 +22,15 @@
 	font-family: "Playfair Display", serif;
 	font-weight: 800;
 	font-size: 2rem;
-	color: #b16036;
+	color: #4cdaf6;
 	padding-top: 10px;
 }
 
 .positionLarge {
 	font-family: "Six Caps", sans-serif;
 	font-weight: 400;
-	font-size: 300px;
-	line-height: 280px;
+	font-size: 200px;
+	line-height: 200px;
 	color: white;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .socialLink:hover {
-	color: #b16036;
+	color: #4cdaf6;
 }
 
 .bouncingArrow {
@@ -87,11 +87,11 @@
 	width: max-content;
 	border-radius: 99rem;
 	padding: 8px 16px;
-	margin: 16px;
+	margin: 16px 0;
 	transition: 0.3s;
 }
 
 .pillButton:hover {
-	color: #b16036;
-	border: 2px solid #b16036;
+	color: #4cdaf6;
+	border: 2px solid #4cdaf6;
 }

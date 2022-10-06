@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "../styles/About.module.css";
 
 const About = () => {
@@ -15,7 +17,17 @@ const About = () => {
 					utilize the most would be NextJs and React.
 				</p>
 			</div>
-			<div className={styles.rightColumn}></div>
+			<div className={styles.rightColumn}>
+				<div className={styles.imageWrapper}>
+					<Image
+						src="/computer.png"
+						alt="background"
+						layout="responsive"
+						height={1024}
+						width={1024}
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };
