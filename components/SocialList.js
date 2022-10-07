@@ -8,21 +8,21 @@ const SocialList = () => {
 			<li className={styles.socialListItem}>
 				<Link href="https://github.com/benleem">
 					<a className={styles.socialLink} target="_blank">
-						GitHub
+						🐙 GitHub
 					</a>
 				</Link>
 			</li>
 			<li className={styles.socialListItem}>
 				<Link href="https://www.linkedin.com/in/benjamin-marshall-609906196">
 					<a className={styles.socialLink} target="_blank">
-						LinkedIn
+						🔗 LinkedIn
 					</a>
 				</Link>
 			</li>
 			<li className={styles.socialListItem}>
 				<Link href="#works">
 					<a className={styles.socialLink} target="_blank">
-						Email
+						✉️ Email
 					</a>
 				</Link>
 			</li>

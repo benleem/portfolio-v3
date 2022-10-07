@@ -42,7 +42,7 @@
 .name {
 	composes: name from "./shared.css";
 	text-align: end;
-	color: #4cdaf6;
+	color: var(--secondary-color);
 }
 
 .descriptionMedium {

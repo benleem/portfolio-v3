@@ -1,5 +1,4 @@
 .footer {
-	padding-top: 400px;
 	width: 95%;
 	margin: auto;
 	display: flex;
@@ -23,10 +22,19 @@
 }
 
 .rightTop {
+	flex-wrap: wrap-reverse;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: space-between;
 	border-bottom: 1px solid white;
 	margin-bottom: 16px;
+}
+
+.contactMe {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 16px;
 }
 
 .query {
@@ -36,4 +44,17 @@
 
 .contact {
 	composes: pillButton from "./shared.css";
+}
+
+.imageWrapper {
+	position: relative;
+	top: 20px;
+	display: block;
+	width: 200px;
+}
+
+@media only screen and (max-width: 990px) {
+	.contact {
+		margin-top: 16px;
+	}
 }

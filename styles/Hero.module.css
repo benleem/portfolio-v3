@@ -22,7 +22,7 @@
 	font-family: "Playfair Display", serif;
 	font-weight: 800;
 	font-size: 32px;
-	color: #4cdaf6;
+	color: var(--secondary-color);
 	padding-top: 10px;
 }
 
@@ -61,6 +61,7 @@
 
 .pillButton {
 	composes: pillButton from "./shared.css";
+	margin: 16px;
 }
 
 @media only screen and (max-width: 1000px) {

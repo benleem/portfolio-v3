@@ -7,10 +7,9 @@ font-family: 'Playfair Display', serif;
 font-family: "Six Caps", sans-serif;
 */
 
-/* 
----Colors--- 
-
-*/
+:root {
+	--secondary-color: #4cdaf6;
+}
 
 html {
 	scroll-behavior: smooth;

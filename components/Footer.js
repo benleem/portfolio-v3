@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import SocialList from "./SocialList";
 
 import styles from "../styles/Footer.module.css";
@@ -11,8 +13,19 @@ const Footer = () => {
 			</div>
 			<div className={styles.footerRight}>
 				<div className={styles.rightTop}>
-					<p className={styles.query}>Need a web developer?</p>
-					<button className={styles.contact}>Contact me</button>
+					<div className={styles.contactMe}>
+						<p className={styles.query}>Need a web developer?</p>
+						<button className={styles.contact}>Contact me</button>
+					</div>
+					<div className={styles.imageWrapper}>
+						<Image
+							src="https://media.giphy.com/media/5ndklThG9vUUdTmgMn/giphy.gif"
+							alt="Web Dev"
+							layout="responsive"
+							width={250}
+							height={400}
+						/>
+					</div>
 				</div>
 				<div className={styles.rightBottom}>
 					<SocialList />
