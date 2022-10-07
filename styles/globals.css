@@ -12,6 +12,10 @@ font-family: "Six Caps", sans-serif;
 
 */
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	padding: 0;
@@ -41,6 +45,12 @@ p {
 
 * {
 	box-sizing: border-box;
+}
+
+#about,
+#works,
+#contact {
+	padding-top: 75px;
 }
 
 /* Media queries */

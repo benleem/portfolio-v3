@@ -1,0 +1,15 @@
+.worksWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 50px;
+	padding-bottom: 325px;
+	width: 100%;
+}
+
+.worksTitle {
+	padding-bottom: 50px;
+	font-weight: 500;
+	composes: descriptionMedium from "./shared.css";
+}

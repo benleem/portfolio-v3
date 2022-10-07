@@ -1,0 +1,47 @@
+.work {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.work .rowRight {
+	padding-right: 10px;
+}
+
+.workAligned {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.workAligned .rowRight {
+	padding-left: 10px;
+}
+
+.rowLeft {
+	/* background-color: aqua; */
+}
+
+.workTitle {
+	composes: titleMedium from "./shared.css";
+}
+
+.workDescription {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.rowRight {
+}
+
+.imageWrapper {
+	display: block;
+	width: 500px;
+}
+
+.workImage {
+	z-index: -1;
+}

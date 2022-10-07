@@ -1,6 +1,6 @@
 .name {
 	font-family: "Playfair Display", serif;
-	font-size: 1.1rem;
+	font-size: 18px;
 	font-weight: 500;
 }
 
@@ -17,4 +17,24 @@
 	font-size: 100px;
 	font-weight: 400;
 	line-height: 100px;
+}
+
+.pillButton {
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid white;
+	background: none;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: end;
+	width: max-content;
+	border-radius: 99rem;
+	padding: 8px 16px;
+	margin: 16px 0;
+	transition: 0.3s;
+}
+
+.pillButton:hover {
+	color: #4cdaf6;
+	border: 2px solid #4cdaf6;
 }

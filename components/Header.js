@@ -13,7 +13,7 @@ const Header = () => {
 				</Link>
 				<ul className={styles.navList}>
 					<li className={styles.navListItem}>
-						<Link href="#about">
+						<Link href="#about" scroll={false}>
 							<a
 								className={
 									router.asPath === "/#about"
@@ -26,7 +26,7 @@ const Header = () => {
 						</Link>
 					</li>
 					<li className={styles.navListItem}>
-						<Link href="#works">
+						<Link href="#works" scroll={false}>
 							<a
 								className={
 									router.asPath === "/#works"
@@ -39,7 +39,7 @@ const Header = () => {
 						</Link>
 					</li>
 					<li className={styles.navListItem}>
-						<Link href="#contact">
+						<Link href="#contact" scroll={false}>
 							<a
 								className={
 									router.asPath === "/#contact"

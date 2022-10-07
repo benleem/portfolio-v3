@@ -21,7 +21,7 @@
 .positionSmall {
 	font-family: "Playfair Display", serif;
 	font-weight: 800;
-	font-size: 2rem;
+	font-size: 32px;
 	color: #4cdaf6;
 	padding-top: 10px;
 }
@@ -30,37 +30,20 @@
 	font-family: "Six Caps", sans-serif;
 	font-weight: 400;
 	font-size: 200px;
-	line-height: 200px;
+	line-height: 180px;
 	color: white;
 }
 
-.socialList {
-	padding-top: 1rem;
-}
-
-.socialListItem {
-	margin-left: 1rem;
-	display: inline-block;
-}
-
-.socialListItem:first-child {
-	margin-left: 0;
-}
-
-.socialLink {
-	font-size: 20px;
-	color: white;
-	transition: color 0.3s;
-}
-
-.socialLink:hover {
-	color: #4cdaf6;
+.listContainer {
+	padding-top: 16px;
+	display: flex;
+	align-items: center;
 }
 
 .bouncingArrow {
-	z-index: -1;
 	position: relative;
 	top: -2px;
+	padding-left: 8px;
 }
 
 /* Hero Right */
@@ -77,21 +60,11 @@
 }
 
 .pillButton {
-	cursor: pointer;
-	font-family: "Oswald", sans-serif;
-	border: 2px solid white;
-	background: none;
-	font-weight: 400;
-	font-size: 30px;
-	text-align: end;
-	width: max-content;
-	border-radius: 99rem;
-	padding: 8px 16px;
-	margin: 16px 0;
-	transition: 0.3s;
+	composes: pillButton from "./shared.css";
 }
 
-.pillButton:hover {
-	color: #4cdaf6;
-	border: 2px solid #4cdaf6;
+@media only screen and (max-width: 1000px) {
+	.heroContainer {
+		flex-direction: column;
+	}
 }

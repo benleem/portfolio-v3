@@ -1,0 +1,39 @@
+.footer {
+	padding-top: 400px;
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+}
+
+.connect {
+	font-family: "Six Caps", sans-serif;
+	font-weight: 400;
+	font-size: 200px;
+	line-height: 180px;
+	color: white;
+}
+
+.footerRight {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 16px;
+}
+
+.rightTop {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid white;
+	margin-bottom: 16px;
+}
+
+.query {
+	composes: descriptionMedium from "./shared.css";
+	padding-right: 10px;
+}
+
+.contact {
+	composes: pillButton from "./shared.css";
+}
