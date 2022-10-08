@@ -7,12 +7,14 @@ const CanvasWrapper = () => {
 	return (
 		<Canvas style={{ height: "100%", width: "100%" }}>
 			<OrbitControls
-				zoomSpeed={0.2}
-				minDistance={1.5}
-				maxDistance={2.5}
+				zoomSpeed={0.3}
+				minDistance={1}
+				maxDistance={2}
 				enablePan={false}
 				// enableZoom={false}
 				target={[0, 0, 0]}
+				maxAzimuthAngle={Math.PI / 2}
+				minAzimuthAngle={Math.PI / -2}
 			/>
 			<ambientLight intensity={0.6} />
 			<pointLight intensity={5} position={[5, 5, 5]} color={"purple"} />
