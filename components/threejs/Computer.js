@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Cone, useGLTF } from "@react-three/drei";
 
@@ -6,12 +6,23 @@ export default function Computer() {
 	const computer = useRef();
 	const { nodes, materials } = useGLTF("/computer/scene.gltf");
 
-	useFrame(() => (computer.current.rotation.y -= 0.004));
+	const [rotation, setRotation] = useState(true);
 
-	console.log(nodes, materials);
+	useFrame(() =>
+		rotation
+			? (computer.current.rotation.y -= 0.004)
+			: (computer.current.rotation.y -= 0)
+	);
+
+	console.log(nodes);
 
 	return (
-		<group ref={computer} dispose={null}>
+		<group
+			ref={computer}
+			dispose={null}
+			onClick={() => setRotation(!rotation)}
+			position={[0, 0.3, 0]}
+		>
 			<mesh
 				castShadow
 				receiveShadow
