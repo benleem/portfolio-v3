@@ -7,10 +7,6 @@
 	gap: 16px;
 }
 
-.connect {
-	composes: titleLarge from "./shared.css";
-}
-
 .footerRight {
 	display: flex;
 	flex-direction: column;
@@ -33,14 +29,6 @@
 	flex-wrap: wrap;
 	gap: 8px;
 	padding-bottom: 16px;
-}
-
-.query {
-	composes: descriptionMedium from "./shared.css";
-}
-
-.contact {
-	composes: pillButton from "./shared.css";
 }
 
 .imageWrapper {

@@ -1,0 +1,31 @@
+.pillButton {
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid white;
+	background: none;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: end;
+	width: max-content;
+	border-radius: 99rem;
+	padding: 8px 16px;
+	transition: 0.3s all ease-in-out;
+	color: white;
+}
+
+.pillButton:hover {
+	color: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
+}
+
+@media only screen and (max-width: 1000px) {
+	.pillButton {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.pillButton {
+		font-size: 18px;
+	}
+}

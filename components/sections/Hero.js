@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 
+import TitleText from "../common/TitleText";
 import SocialList from "../common/SocialList";
+import PillButton from "../common/PillButton";
+import DescriptionText from "../common/DescriptionText";
 
 import styles from "../../styles/Hero.module.css";
 
@@ -9,8 +12,7 @@ const Hero = () => {
 		<section className={styles.heroContainer}>
 			<div className={styles.heroLeft}>
 				<p className={styles.positionSmall}>front-end</p>
-				<p className={styles.positionLarge}>Web</p>
-				<p className={styles.positionLarge}>Developer</p>
+				<TitleText type="large" text={`Web Developer`} />
 				<div className={styles.listContainer}>
 					<SocialList />
 					<motion.p
@@ -27,15 +29,12 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className={styles.heroRight}>
-				<p
-					className={styles.descriptionMedium}
-					style={{ maxWidth: "600px", textAlign: "end" }}
-				>
-					I'm a front-end web developer, and JAM stack enthusiast. I have a
+				<DescriptionText
+					text="I'm a front-end web developer, and JAM stack enthusiast. I have a
 					passion for all things technology, especially programming. Recently, I
-					have been loving the DALL·E 2 tool to create cool art! 🎨🔥🥶
-				</p>
-				<button className={styles.pillButton}>Contact Me</button>
+					have been loving the DALL·E 2 tool to create cool art! 🎨🔥🥶"
+				/>
+				<PillButton text="Contact me" />
 			</div>
 		</section>
 	);

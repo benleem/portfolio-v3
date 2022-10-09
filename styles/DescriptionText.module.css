@@ -1,0 +1,18 @@
+.descriptionText {
+	font-weight: 400;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+	.descriptionMedium {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.descriptionMedium {
+		font-size: 18px;
+	}
+}

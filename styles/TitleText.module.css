@@ -1,0 +1,43 @@
+.titleMedium {
+	font-family: "Six Caps", sans-serif;
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 1;
+}
+.titleLarge {
+	font-family: "Six Caps", sans-serif;
+	font-weight: 400;
+	font-size: 200px;
+	line-height: 180px;
+	color: white;
+	width: min-content;
+}
+
+@media only screen and (max-width: 1000px) {
+	.titleLarge {
+		font-size: 170px;
+		line-height: 150px;
+	}
+
+	.titleMedium {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* .titleLarge {
+		font-size: 125px;
+		line-height: 110px;
+	} */
+
+	.titleMedium {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.titleLarge {
+		font-size: 125px;
+		line-height: 110px;
+	}
+}

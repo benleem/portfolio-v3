@@ -26,10 +26,6 @@
 	/* background-color: aqua; */
 }
 
-.workTitle {
-	composes: titleMedium from "./shared.css";
-}
-
 .workDescription {
 	font-size: 18px;
 	text-transform: uppercase;

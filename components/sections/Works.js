@@ -1,6 +1,9 @@
-import Work from "./Work";
-import styles from "../../styles/Works.module.css";
 import { v4 as uuidv4 } from "uuid";
+
+import Work from "./Work";
+import DescriptionText from "../common/DescriptionText";
+
+import styles from "../../styles/Works.module.css";
 
 const Works = () => {
 	const works = [
@@ -26,7 +29,7 @@ const Works = () => {
 
 	return (
 		<section className={styles.works} id="works">
-			<p className={styles.worksTitle}>🎨 Selected works</p>
+			<DescriptionText text="🎨 Selected works" />
 			<div className={styles.worksWrapper}>
 				{works.map((work) => (
 					<Work

@@ -8,10 +8,5 @@
 	max-width: 1200px;
 	width: 100%;
 	margin: auto;
-}
-
-.worksTitle {
-	padding-bottom: 50px;
-	font-weight: 500;
-	composes: descriptionMedium from "./shared.css";
+	padding-top: 50px;
 }

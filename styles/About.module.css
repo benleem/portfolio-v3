@@ -24,20 +24,10 @@
 	width: max-content;
 }
 
-.titleMedium {
-	composes: titleMedium from "./shared.css";
-}
-
 .name {
 	composes: name from "./shared.css";
 	text-align: end;
 	color: var(--secondary-color);
-}
-
-.descriptionMedium {
-	composes: descriptionMedium from "./shared.css";
-	text-align: start;
-	text-indent: 150px;
 }
 
 .rightColumn {

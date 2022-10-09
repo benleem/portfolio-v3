@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import TitleText from "./common/TitleText";
+import DescriptionText from "./common/DescriptionText";
+import PillButton from "./common/PillButton";
 import SocialList from "./common/SocialList";
 
 import styles from "../styles/Footer.module.css";
@@ -8,14 +11,13 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer} id="contact">
 			<div className={styles.footerLeft}>
-				<p className={styles.connect}>Let's</p>
-				<p className={styles.connect}>Connect</p>
+				<TitleText type="large" text="Let's connect" />
 			</div>
 			<div className={styles.footerRight}>
 				<div className={styles.rightTop}>
 					<div className={styles.contactMe}>
-						<p className={styles.query}>Need a web developer?</p>
-						<button className={styles.contact}>Contact me</button>
+						<DescriptionText text="Need a web developer?" />
+						<PillButton text="Contact me" />
 					</div>
 					<div className={styles.imageWrapper}>
 						<Image

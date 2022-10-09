@@ -25,10 +25,6 @@
 	color: var(--secondary-color);
 }
 
-.positionLarge {
-	composes: titleLarge from "./shared.css";
-}
-
 .listContainer {
 	width: 100%;
 	padding-top: 16px;
@@ -49,15 +45,11 @@
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: flex-end;
-}
-
-.descriptionMedium {
-	composes: descriptionMedium from "./shared.css";
-}
-
-.pillButton {
-	composes: pillButton from "./shared.css";
-	margin: 16px 0;
+	max-width: 600px;
+	width: 100%;
+	text-align: end;
+	gap: 8px;
+	padding-bottom: 16px;
 }
 
 @media only screen and (max-width: 1000px) {
