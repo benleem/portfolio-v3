@@ -1,10 +1,10 @@
-import CanvasWrapper from "./threejs/Canvas";
+import CanvasWrapper from "../threejs/Canvas";
 
-import styles from "../styles/About.module.css";
+import styles from "../../styles/About.module.css";
 
 const About = () => {
 	return (
-		<div className={styles.about} id="about">
+		<section className={styles.about} id="about">
 			<div className={styles.leftColumn}>
 				<div className={styles.columnTop}>
 					<p className={styles.titleMedium}>Hello. I am Ben</p>
@@ -20,7 +20,7 @@ const About = () => {
 			<div className={styles.rightColumn}>
 				<CanvasWrapper />
 			</div>
-		</div>
+		</section>
 	);
 };
 

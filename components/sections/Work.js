@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../styles/Work.module.css";
+import styles from "../../styles/Work.module.css";
 
 const Work = ({ title, description, image, alignLeft }) => {
 	return (

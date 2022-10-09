@@ -1,15 +1,9 @@
 import { useRef } from "react";
-import { Cone, useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 
 export default function Computer() {
 	const computer = useRef();
 	const { nodes, materials } = useGLTF("/computer/scene.gltf");
-
-	// useFrame(() =>
-	// 	rotation
-	// 		? (computer.current.rotation.y -= 0.004)
-	// 		: (computer.current.rotation.y -= 0)
-	// );
 
 	return (
 		<group ref={computer} dispose={null} position={[0, -0.5, 0]}>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SocialList from "./SocialList";
+import SocialList from "./common/SocialList";
 
 import styles from "../styles/Footer.module.css";
 

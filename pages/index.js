@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Works from "../components/Works";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Works from "../components/sections/Works";
 
 export default function Home() {
 	return (

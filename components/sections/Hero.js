@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
-import SocialList from "./SocialList";
+import SocialList from "../common/SocialList";
 
-import styles from "../styles/Hero.module.css";
+import styles from "../../styles/Hero.module.css";
 
 const Hero = () => {
 	return (
-		<div className={styles.heroContainer}>
+		<section className={styles.heroContainer}>
 			<div className={styles.heroLeft}>
 				<p className={styles.positionSmall}>front-end</p>
 				<p className={styles.positionLarge}>Web</p>
@@ -37,7 +37,7 @@ const Hero = () => {
 				</p>
 				<button className={styles.pillButton}>Contact Me</button>
 			</div>
-		</div>
+		</section>
 	);
 };
 

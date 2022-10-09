@@ -1,5 +1,5 @@
 import Work from "./Work";
-import styles from "../styles/Works.module.css";
+import styles from "../../styles/Works.module.css";
 import { v4 as uuidv4 } from "uuid";
 
 const Works = () => {
@@ -25,7 +25,7 @@ const Works = () => {
 	];
 
 	return (
-		<div className={styles.works} id="works">
+		<section className={styles.works} id="works">
 			<p className={styles.worksTitle}>🎨 Selected works</p>
 			<div className={styles.worksWrapper}>
 				{works.map((work) => (
@@ -38,7 +38,7 @@ const Works = () => {
 					/>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from "../styles/SocialList.module.css";
+import styles from "../../styles/SocialList.module.css";
 
 const SocialList = () => {
 	return (
