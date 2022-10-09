@@ -11,10 +11,6 @@ font-family: "Six Caps", sans-serif;
 	--secondary-color: #4cdaf6;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 html,
 body {
 	padding: 0;
@@ -24,6 +20,15 @@ body {
 	height: 100%;
 	width: 100%;
 	color: white;
+	scroll-behavior: smooth;
+}
+
+main {
+	height: 100%;
+	width: 95%;
+	position: relative;
+	padding-top: 65px;
+	margin: auto;
 }
 
 a {
@@ -47,8 +52,8 @@ p {
 }
 
 #about,
-#works,
-#contact {
+#works
+/* #contact  */ {
 	padding-top: 75px;
 }
 

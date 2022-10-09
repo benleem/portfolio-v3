@@ -4,6 +4,14 @@
 	font-weight: 500;
 }
 
+.titleLarge {
+	font-family: "Six Caps", sans-serif;
+	font-weight: 400;
+	font-size: 200px;
+	line-height: 180px;
+	color: white;
+}
+
 .descriptionMedium {
 	/* font-family: "Oswald", sans-serif; */
 	font-weight: 400;
@@ -16,7 +24,7 @@
 	font-family: "Six Caps", sans-serif;
 	font-size: 100px;
 	font-weight: 400;
-	line-height: 100px;
+	line-height: 1;
 }
 
 .pillButton {
@@ -31,6 +39,7 @@
 	border-radius: 99rem;
 	padding: 8px 16px;
 	transition: 0.3s;
+	color: white;
 }
 
 .pillButton:hover {
@@ -42,4 +51,48 @@
 	background-color: rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width: 1000px) {
+	.descriptionMedium {
+		font-size: 24px;
+	}
+
+	.titleLarge {
+		font-size: 170px;
+		line-height: 150px;
+	}
+
+	.titleMedium {
+		font-size: 80px;
+	}
+
+	.pillButton {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.descriptionMedium {
+		font-size: 18px;
+	}
+
+	/* .titleLarge {
+		font-size: 125px;
+		line-height: 110px;
+	} */
+
+	.titleMedium {
+		font-size: 50px;
+	}
+
+	.pillButton {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.titleLarge {
+		font-size: 125px;
+		line-height: 110px;
+	}
 }

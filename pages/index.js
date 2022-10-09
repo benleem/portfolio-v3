@@ -1,11 +1,8 @@
 import Head from "next/head";
 
-import Header from "../components/Header";
-import Background from "../components/Background";
-import ContentContainer from "../components/ContentContainer";
-import Footer from "../components/Footer";
-
-import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Works from "../components/Works";
 
 export default function Home() {
 	return (
@@ -16,14 +13,10 @@ export default function Home() {
 					name="description"
 					content="Ben Marshall's portfolio, made with ❤️"
 				/>
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={styles.container}>
-				<Header />
-				<Background />
-				<ContentContainer />
-				<Footer />
-			</main>
+			<Hero />
+			<About />
+			<Works />
 		</>
 	);
 }

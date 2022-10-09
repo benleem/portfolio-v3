@@ -4,21 +4,17 @@
 	display: flex;
 	flex: 1;
 	align-items: flex-end;
+	gap: 16px;
 }
 
 .connect {
-	font-family: "Six Caps", sans-serif;
-	font-weight: 400;
-	font-size: 200px;
-	line-height: 180px;
-	color: white;
+	composes: titleLarge from "./shared.css";
 }
 
 .footerRight {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-left: 16px;
 }
 
 .rightTop {
@@ -31,15 +27,16 @@
 }
 
 .contactMe {
+	height: auto;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	gap: 8px;
 	padding-bottom: 16px;
 }
 
 .query {
 	composes: descriptionMedium from "./shared.css";
-	padding-right: 10px;
 }
 
 .contact {
@@ -53,8 +50,16 @@
 	width: 200px;
 }
 
-@media only screen and (max-width: 990px) {
-	.contact {
-		margin-top: 16px;
+@media only screen and (max-width: 650px) {
+	.footer {
+		flex-direction: column;
+		padding-bottom: 16px;
+	}
+	.footerLeft {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		top: 75px;
 	}
 }

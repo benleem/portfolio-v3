@@ -23,18 +23,14 @@
 	font-weight: 800;
 	font-size: 32px;
 	color: var(--secondary-color);
-	padding-top: 10px;
 }
 
 .positionLarge {
-	font-family: "Six Caps", sans-serif;
-	font-weight: 400;
-	font-size: 200px;
-	line-height: 180px;
-	color: white;
+	composes: titleLarge from "./shared.css";
 }
 
 .listContainer {
+	width: 100%;
 	padding-top: 16px;
 	display: flex;
 	align-items: center;
@@ -67,5 +63,14 @@
 @media only screen and (max-width: 1000px) {
 	.heroContainer {
 		flex-direction: column;
+	}
+
+	.positionSmall {
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.heroLeft {
+		overflow-x: hidden;
 	}
 }

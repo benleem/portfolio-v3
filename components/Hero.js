@@ -9,7 +9,7 @@ const Hero = () => {
 		<div className={styles.heroContainer}>
 			<div className={styles.heroLeft}>
 				<p className={styles.positionSmall}>front-end</p>
-				<p className={styles.positionLarge}>Web/Mobile</p>
+				<p className={styles.positionLarge}>Web</p>
 				<p className={styles.positionLarge}>Developer</p>
 				<div className={styles.listContainer}>
 					<SocialList />

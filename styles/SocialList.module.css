@@ -1,10 +1,10 @@
 .socialListItem {
-	margin-left: 16px;
 	display: inline-block;
+	margin-right: 16px;
 }
 
-.socialListItem:first-child {
-	margin-left: 0;
+.socialListItem:last-child {
+	margin-right: 0;
 }
 
 .socialLink {
@@ -16,4 +16,10 @@
 
 .socialLink:hover {
 	color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 600px) {
+	.socialLink {
+		font-size: 16px;
+	}
 }
