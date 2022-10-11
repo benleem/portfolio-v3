@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 import TitleText from "./common/TitleText";
+import LinkListItem from "./common/LinkListItem";
 import DescriptionText from "./common/DescriptionText";
 import PillButton from "./common/PillButton";
-import SocialList from "./common/SocialList";
 
 import styles from "../styles/Footer.module.css";
 
@@ -30,7 +30,14 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className={styles.rightBottom}>
-					<SocialList />
+					<ul className={styles.socialList}>
+						<LinkListItem link="https://github.com/benleem" text="🐙 GitHub" />
+						<LinkListItem
+							link="https://github.com/benleem"
+							text="🔗 LinkedIn"
+						/>
+						<LinkListItem link="https://github.com/benleem" text="✉️ Email" />
+					</ul>
 				</div>
 			</div>
 		</footer>

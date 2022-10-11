@@ -45,10 +45,17 @@
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: flex-end;
+}
+
+.widthWrapper {
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 8px;
 	max-width: 600px;
 	width: 100%;
-	text-align: end;
-	gap: 8px;
 	padding-bottom: 16px;
 }
 

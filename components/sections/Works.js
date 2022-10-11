@@ -9,34 +9,43 @@ const Works = () => {
 	const works = [
 		{
 			title: "Chirp",
-			description: "Chirp app",
+			description: "NextJs, ReactJs, CSS Modules, Firebase SDK",
 			image: "/chirp.png",
+			github: "https://github.com/benleem/chirp",
+			site: "https://chirp-social.vercel.app/",
 			alignLeft: false,
 		},
 		{
 			title: "Goggle Earth",
-			description: "Goggle earth app",
+			description: "ReactJs, CSS",
 			image: "/earth.png",
+			github: "https://github.com/benleem/threejs-test",
+			site: "https://goggle-earth.netlify.app/",
 			alignLeft: true,
 		},
 		{
 			title: "Crypto Snapshot",
-			description: "Crypto snapshot app",
+			description: "HTML, JS, CSS",
 			image: "/crypto.png",
+			github:
+				"https://github.com/benleem/crypto_snapshot/tree/main/cryptosnapshot",
+			site: "https://cryptosnapshot.netlify.app/",
 			alignLeft: false,
 		},
 	];
 
 	return (
 		<section className={styles.works} id="works">
-			<DescriptionText text="🎨 Selected works" />
 			<div className={styles.worksWrapper}>
+				<DescriptionText text="🎨 Selected works" />
 				{works.map((work) => (
 					<Work
 						key={uuidv4()}
 						title={work.title}
 						description={work.description}
 						image={work.image}
+						github={work.github}
+						site={work.site}
 						alignLeft={work.alignLeft}
 					/>
 				))}

@@ -6,13 +6,13 @@
 }
 
 @media only screen and (max-width: 1000px) {
-	.descriptionMedium {
+	.descriptionText {
 		font-size: 24px;
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	.descriptionMedium {
+@media only screen and (max-width: 400px) {
+	.descriptionText {
 		font-size: 18px;
 	}
 }

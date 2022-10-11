@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import TitleText from "../common/TitleText";
-import SocialList from "../common/SocialList";
+import LinkListItem from "../common/LinkListItem";
 import PillButton from "../common/PillButton";
 import DescriptionText from "../common/DescriptionText";
 
@@ -14,7 +14,15 @@ const Hero = () => {
 				<p className={styles.positionSmall}>front-end</p>
 				<TitleText type="large" text={`Web Developer`} />
 				<div className={styles.listContainer}>
-					<SocialList />
+					<ul className={styles.socialList}>
+						<LinkListItem link="https://github.com/benleem" text="🐙 GitHub" />
+						<LinkListItem
+							link="https://github.com/benleem"
+							text="🔗 LinkedIn"
+						/>
+						<LinkListItem link="https://github.com/benleem" text="✉️ Email" />
+					</ul>
+
 					<motion.p
 						className={styles.bouncingArrow}
 						initial={{ x: [0] }}
@@ -29,12 +37,14 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className={styles.heroRight}>
-				<DescriptionText
-					text="I'm a front-end web developer, and JAM stack enthusiast. I have a
+				<div className={styles.widthWrapper}>
+					<DescriptionText
+						text="I'm a front-end web developer, and JAM stack enthusiast. I have a
 					passion for all things technology, especially programming. Recently, I
 					have been loving the DALL·E 2 tool to create cool art! 🎨🔥🥶"
-				/>
-				<PillButton text="Contact me" />
+					/>
+					<PillButton text="Contact me" />
+				</div>
 			</div>
 		</section>
 	);

@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 import TitleText from "../common/TitleText";
+import LinkListItem from "../common/LinkListItem";
 
 import styles from "../../styles/Work.module.css";
 
-const Work = ({ title, description, image, alignLeft }) => {
+const Work = ({ title, description, image, github, site, alignLeft }) => {
 	return (
 		<div className={alignLeft === true ? styles.workAligned : styles.work}>
 			<div className={styles.rowLeft}>
@@ -21,6 +22,12 @@ const Work = ({ title, description, image, alignLeft }) => {
 						width={1920}
 						height={1080}
 					/>
+				</div>
+				<div className={styles.linksWrapper}>
+					<ul className={styles.linksList}>
+						<LinkListItem link={github} text="🐙 GitHub" />
+						<LinkListItem link={site} text="🔴 Live" />
+					</ul>
 				</div>
 			</div>
 		</div>
