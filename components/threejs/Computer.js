@@ -1,19 +1,29 @@
+import { useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
-import * as THREE from "three";
+import { lerp } from "three/src/math/MathUtils";
 
-export default function Computer({ clicked, setClicked }) {
+export default function Computer() {
 	const { nodes, materials } = useGLTF("/computer/scene.gltf");
+	const [clicked, setClicked] = useState(false);
 
 	useFrame((state) => {
-		if (clicked) {
-			state.camera.position.lerp(new THREE.Vector3(-0.1, 0.38, 0.3), 0.05);
-			state.camera.updateProjectionMatrix();
-		} else {
-			state.camera.position.lerp(new THREE.Vector3(0, 0.2, 1.5), 0.05);
-			state.camera.updateProjectionMatrix();
-		}
-		return null;
+		// Animate camera zoom
+		state.camera.position.x = lerp(
+			state.camera.position.x,
+			clicked ? -0.095 : 0,
+			0.05
+		);
+		state.camera.position.y = lerp(
+			state.camera.position.y,
+			clicked ? 0.38 : 0.2,
+			0.05
+		);
+		state.camera.position.z = lerp(
+			state.camera.position.z,
+			clicked ? 0.3 : 1.5,
+			0.05
+		);
 	});
 
 	return (
