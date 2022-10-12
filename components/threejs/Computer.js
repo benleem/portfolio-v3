@@ -1,15 +1,29 @@
-import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import * as THREE from "three";
 
-export default function Computer() {
-	const computer = useRef();
+export default function Computer({ clicked, setClicked }) {
 	const { nodes, materials } = useGLTF("/computer/scene.gltf");
 
+	useFrame((state) => {
+		if (clicked) {
+			state.camera.position.lerp(new THREE.Vector3(-0.1, 0.38, 0.3), 0.05);
+			state.camera.updateProjectionMatrix();
+		} else {
+			state.camera.position.lerp(new THREE.Vector3(0, 0.2, 1.5), 0.05);
+			state.camera.updateProjectionMatrix();
+		}
+		return null;
+	});
+
 	return (
-		<group ref={computer} dispose={null} position={[0, -0.5, 0]}>
+		<group dispose={null} position={[0, -0.5, 0]}>
 			<group rotation={[-Math.PI / 2, 0, 0]}>
 				<group rotation={[Math.PI / 2, 0, 0]}>
-					<group position={[-0.13, 1, -0.78]}>
+					<group
+						position={[-0.13, 1, -0.78]}
+						onClick={() => setClicked(!clicked)}
+					>
 						<mesh
 							castShadow
 							receiveShadow
