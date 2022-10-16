@@ -101,7 +101,7 @@ export default function Computer(props) {
 					</group>
 				</group>
 			</group>
-			<group position={[0, 0, 0]}>
+			<group position={[0, 0, -0.0039]}>
 				<mesh
 					castShadow
 					receiveShadow
