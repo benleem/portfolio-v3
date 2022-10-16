@@ -1,29 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { lerp } from "three/src/math/MathUtils";
 
 export default function Computer() {
-	const { nodes, materials } = useGLTF("/computer/scene.gltf");
+	const blink = useRef();
+	const { nodes, materials } = useGLTF("/computer.glb");
 	const [clicked, setClicked] = useState(false);
+	const [animateBlink, setAnimateBlink] = useState(false);
 
-	useFrame((state) => {
+	useEffect(() => {
+		blink.current.material.transparent = true;
+	}, []);
+
+	useFrame(({ camera, clock }) => {
 		// Animate camera zoom
-		state.camera.position.x = lerp(
-			state.camera.position.x,
-			clicked ? -0.095 : 0,
-			0.05
-		);
-		state.camera.position.y = lerp(
-			state.camera.position.y,
-			clicked ? 0.38 : 0.2,
-			0.05
-		);
-		state.camera.position.z = lerp(
-			state.camera.position.z,
-			clicked ? 0.3 : 1.5,
-			0.05
-		);
+		camera.position.x = lerp(camera.position.x, clicked ? -0.095 : 0, 0.05);
+		camera.position.y = lerp(camera.position.y, clicked ? 0.38 : 0.2, 0.05);
+		camera.position.z = lerp(camera.position.z, clicked ? 0.3 : 1.5, 0.05);
+
+		if (clock.elapsedTime > 0.5) {
+			clock.stop();
+			setAnimateBlink(!animateBlink);
+			clock.start();
+		}
+
+		blink.current.material.opacity = animateBlink ? 0 : 1;
 	});
 
 	return (
@@ -97,18 +99,67 @@ export default function Computer() {
 							material={materials.base}
 						/>
 					</group>
-					<group position={[-0.1, 0.88, -0.26]}>
-						<mesh
-							castShadow
-							receiveShadow
-							geometry={nodes.Object_20.geometry}
-							material={materials.base}
-						/>
-					</group>
 				</group>
+			</group>
+			<group position={[0, 0, 0.0023]}>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text.geometry}
+					material={materials.Glow}
+					position={[-0.58, 1.23, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text001.geometry}
+					material={materials.Glow}
+					position={[-0.58, 1.12, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text002.geometry}
+					material={materials.Glow}
+					position={[-0.29, 1.12, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text003.geometry}
+					material={materials.Glow}
+					position={[0.04, 1.12, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text004.geometry}
+					material={materials.Glow}
+					position={[-0.58, 0.8, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
+				<mesh
+					ref={blink}
+					castShadow
+					receiveShadow
+					geometry={nodes.Text005.geometry}
+					material={materials.Glow2}
+					position={[-0.55, 0.8, -0.27]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.05}
+				/>
 			</group>
 		</group>
 	);
 }
 
-useGLTF.preload("/computer/scene.gltf");
+useGLTF.preload("/computer.glb");
