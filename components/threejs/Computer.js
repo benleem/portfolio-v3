@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { lerp } from "three/src/math/MathUtils";
 
-export default function Computer() {
+export default function Computer(props) {
 	const blink = useRef();
 	const { nodes, materials } = useGLTF("/computer.glb");
 	const [clicked, setClicked] = useState(false);
@@ -101,61 +101,61 @@ export default function Computer() {
 					</group>
 				</group>
 			</group>
-			<group position={[0, 0, 0.0023]}>
+			<group position={[0, 0, 0]}>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.Text.geometry}
 					material={materials.Glow}
-					position={[-0.58, 1.23, -0.27]}
+					position={[-0.58, 1.24, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
+					scale={0.03}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Text006.geometry}
+					material={materials.Glow}
+					position={[-0.58, 1.18, -0.26]}
+					rotation={[Math.PI / 2, 0, 0]}
+					scale={0.03}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.Text001.geometry}
 					material={materials.Glow}
-					position={[-0.58, 1.12, -0.27]}
+					position={[-0.29, 1.18, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
+					scale={0.03}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.Text002.geometry}
 					material={materials.Glow}
-					position={[-0.29, 1.12, -0.27]}
+					position={[-0.02, 1.18, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
+					scale={0.03}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.Text003.geometry}
 					material={materials.Glow}
-					position={[0.04, 1.12, -0.27]}
+					position={[-0.58, 0.99, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
-				/>
-				<mesh
-					castShadow
-					receiveShadow
-					geometry={nodes.Text004.geometry}
-					material={materials.Glow}
-					position={[-0.58, 0.8, -0.27]}
-					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
+					scale={0.03}
 				/>
 				<mesh
 					ref={blink}
 					castShadow
 					receiveShadow
-					geometry={nodes.Text005.geometry}
+					geometry={nodes.Text004.geometry}
 					material={materials.Glow2}
-					position={[-0.55, 0.8, -0.27]}
+					position={[-0.56, 0.99, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
-					scale={0.05}
+					scale={0.03}
 				/>
 			</group>
 		</group>
