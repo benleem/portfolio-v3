@@ -153,7 +153,7 @@ export default function Computer(props) {
 					receiveShadow
 					geometry={nodes.Text004.geometry}
 					material={materials.Glow2}
-					position={[-0.56, 0.99, -0.26]}
+					position={[-0.21, 0.99, -0.26]}
 					rotation={[Math.PI / 2, 0, 0]}
 					scale={0.03}
 				/>
