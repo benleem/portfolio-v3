@@ -1,4 +1,4 @@
-.worksWrapper {
+.works {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-row-gap: 50px;

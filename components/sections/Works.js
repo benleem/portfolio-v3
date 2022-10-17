@@ -40,19 +40,17 @@ const Works = () => {
 
 	return (
 		<section className={styles.works} id="works">
-			<div className={styles.worksWrapper}>
-				<DescriptionText text="🎨 Selected works" />
-				{works.map((work) => (
-					<Work
-						key={uuidv4()}
-						title={work.title}
-						description={work.description}
-						image={work.image}
-						github={work.github}
-						site={work.site}
-					/>
-				))}
-			</div>
+			<DescriptionText text="🎨 Selected works" />
+			{works.map((work) => (
+				<Work
+					key={uuidv4()}
+					title={work.title}
+					description={work.description}
+					image={work.image}
+					github={work.github}
+					site={work.site}
+				/>
+			))}
 		</section>
 	);
 };
