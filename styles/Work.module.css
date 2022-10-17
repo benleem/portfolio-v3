@@ -4,22 +4,12 @@
 	justify-content: flex-start;
 	flex-direction: row-reverse;
 	align-items: center;
+	gap: 10px;
 }
 
-.work .rowRight {
-	padding-right: 10px;
-}
-
-.workAligned {
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+.work:nth-child(odd) {
+	flex-direction: row;
 	text-align: end;
-}
-
-.workAligned .rowRight {
-	padding-left: 10px;
 }
 
 .rowLeft {
@@ -51,7 +41,6 @@
 .imageWrapper {
 	display: block;
 	width: 100%;
-	transition: all 0.3s ease-in-out;
 }
 
 .workImage {
@@ -81,18 +70,13 @@
 
 @media only screen and (max-width: 800px) {
 	.work,
-	.workAligned {
+	.work:nth-child(odd) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	.workAligned .rowRight,
-	.work .rowRight {
-		padding-left: 0;
-		padding-right: 0;
-	}
 
-	.rowRight {
-		padding-top: 8px;
+	.rowLeft {
+		width: 100%;
 	}
 }

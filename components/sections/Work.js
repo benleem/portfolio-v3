@@ -5,9 +5,9 @@ import LinkListItem from "../common/LinkListItem";
 
 import styles from "../../styles/Work.module.css";
 
-const Work = ({ title, description, image, github, site, alignLeft }) => {
+const Work = ({ title, description, image, github, site }) => {
 	return (
-		<div className={alignLeft === true ? styles.workAligned : styles.work}>
+		<div className={styles.work}>
 			<div className={styles.rowLeft}>
 				<TitleText type="medium" text={title} />
 				<p className={styles.workDescription}>{description}</p>

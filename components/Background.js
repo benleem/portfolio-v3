@@ -6,6 +6,7 @@ const Background = () => {
 	return (
 		<section className={styles.backgroundWrapper}>
 			<Image
+				priority
 				className={styles.background}
 				src="/background.png"
 				alt="background"

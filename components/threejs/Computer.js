@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { lerp } from "three/src/math/MathUtils";
 
-export default function Computer(props) {
+export default function Computer() {
 	const blink = useRef();
 	const { nodes, materials } = useGLTF("/computer.glb");
 	const [clicked, setClicked] = useState(false);
@@ -19,12 +19,12 @@ export default function Computer(props) {
 		camera.position.y = lerp(camera.position.y, clicked ? 0.38 : 0.2, 0.05);
 		camera.position.z = lerp(camera.position.z, clicked ? 0.3 : 1.5, 0.05);
 
+		// blinking cursor
 		if (clock.elapsedTime > 0.5) {
 			clock.stop();
 			setAnimateBlink(!animateBlink);
 			clock.start();
 		}
-
 		blink.current.material.opacity = animateBlink ? 0 : 1;
 	});
 

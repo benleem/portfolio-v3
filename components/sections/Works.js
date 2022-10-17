@@ -13,7 +13,6 @@ const Works = () => {
 			image: "/chirp.png",
 			github: "https://github.com/benleem/chirp",
 			site: "https://chirp-social.vercel.app/",
-			alignLeft: false,
 		},
 		{
 			title: "Goggle Earth",
@@ -21,7 +20,6 @@ const Works = () => {
 			image: "/earth.png",
 			github: "https://github.com/benleem/threejs-test",
 			site: "https://goggle-earth.netlify.app/",
-			alignLeft: true,
 		},
 		{
 			title: "Crypto Snapshot",
@@ -30,7 +28,13 @@ const Works = () => {
 			github:
 				"https://github.com/benleem/crypto_snapshot/tree/main/cryptosnapshot",
 			site: "https://cryptosnapshot.netlify.app/",
-			alignLeft: false,
+		},
+		{
+			title: "Landing Page",
+			description: "HTML, JS, CSS",
+			image: "/landing.png",
+			github: "https://github.com/benleem/landingpage/tree/main/landingofpage",
+			site: "https://htmlpreview.github.io/?https://github.com/benleem/landingpage/blob/main/landingofpage/index.html",
 		},
 	];
 
@@ -46,7 +50,6 @@ const Works = () => {
 						image={work.image}
 						github={work.github}
 						site={work.site}
-						alignLeft={work.alignLeft}
 					/>
 				))}
 			</div>
