@@ -9,14 +9,14 @@ const Works = () => {
 	const works = [
 		{
 			title: "Chirp",
-			description: "NextJs, ReactJs, CSS Modules, Firebase SDK",
+			description: "NextJs, React, CSS Modules, Firebase SDK",
 			image: "/chirp.png",
 			github: "https://github.com/benleem/chirp",
 			site: "https://chirp-social.vercel.app/",
 		},
 		{
 			title: "Goggle Earth",
-			description: "ReactJs, CSS",
+			description: "React, CSS",
 			image: "/earth.png",
 			github: "https://github.com/benleem/threejs-test",
 			site: "https://goggle-earth.netlify.app/",
@@ -40,7 +40,7 @@ const Works = () => {
 
 	return (
 		<section className={styles.works} id="works">
-			<DescriptionText text="🎨 Selected works" />
+			<DescriptionText text="🎨 Selected works" bold={true} />
 			{works.map((work) => (
 				<Work
 					key={uuidv4()}

@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import TitleText from "../common/TitleText";
 import LinkListItem from "../common/LinkListItem";
+import DescriptionText from "../common/DescriptionText";
 
 import styles from "../../styles/Work.module.css";
 
@@ -10,7 +11,7 @@ const Work = ({ title, description, image, github, site }) => {
 		<div className={styles.work}>
 			<div className={styles.rowLeft}>
 				<TitleText type="medium" text={title} />
-				<p className={styles.workDescription}>{description}</p>
+				<DescriptionText text={description} />
 			</div>
 			<div className={styles.rowRight}>
 				<div className={styles.imageWrapper}>

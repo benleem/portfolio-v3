@@ -1,6 +1,7 @@
 .socialListItem {
 	display: inline-block;
 	margin-right: 16px;
+	cursor: pointer;
 }
 
 .socialListItem:last-child {

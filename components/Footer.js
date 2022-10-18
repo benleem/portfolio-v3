@@ -33,10 +33,10 @@ const Footer = () => {
 					<ul className={styles.socialList}>
 						<LinkListItem link="https://github.com/benleem" text="🐙 GitHub" />
 						<LinkListItem
-							link="https://github.com/benleem"
+							link="https://www.linkedin.com/in/benjamin-marshall-609906196/"
 							text="🔗 LinkedIn"
 						/>
-						<LinkListItem link="https://github.com/benleem" text="✉️ Email" />
+						<LinkListItem text="✉️ Email" disableLink={true} />
 					</ul>
 				</div>
 			</div>
