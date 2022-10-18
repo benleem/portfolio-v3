@@ -17,6 +17,7 @@ export default function Home() {
 			<Hero />
 			<About />
 			<Works />
+			<p>Hello</p>
 		</>
 	);
 }
