@@ -32,8 +32,8 @@ const Works = () => {
 			title: "Landing Page",
 			description: "HTML, JS, CSS",
 			image: "/landing.png",
-			github: "https://github.com/benleem/landingpage/tree/main/landingofpage",
-			site: "https://htmlpreview.github.io/?https://github.com/benleem/landingpage/blob/main/landingofpage/index.html",
+			github: "https://github.com/benleem/landingpage",
+			site: "https://htmlpreview.github.io/?https://github.com/benleem/landingpage/blob/main/index.html",
 		},
 	];
 
