@@ -25,8 +25,7 @@ const Works = () => {
 			title: "Crypto Snapshot",
 			description: "HTML, JS, CSS",
 			image: "/crypto.png",
-			github:
-				"https://github.com/benleem/crypto_snapshot/tree/main/cryptosnapshot",
+			github: "https://github.com/benleem/crypto_snapshot",
 			site: "https://cryptosnapshot.netlify.app/",
 		},
 		{
