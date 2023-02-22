@@ -9,6 +9,7 @@ import Background from "../components/Background";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+	console.log("Hello");
 	return (
 		<>
 			<Head>

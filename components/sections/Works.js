@@ -8,6 +8,13 @@ import styles from "../../styles/Works.module.css";
 const Works = () => {
 	const works = [
 		{
+			title: "Love Together",
+			description: "Front End Developer",
+			image: "/love-together.png",
+			info: "https://www.linkedin.com/in/benjamin-marshall-609906196/#experience",
+			site: "https://www.love-together.com/",
+		},
+		{
 			title: "Chirp",
 			description: "NextJs, React, CSS Modules, Firebase SDK",
 			image: "/chirp.png",
@@ -39,13 +46,14 @@ const Works = () => {
 
 	return (
 		<section className={styles.works} id="works">
-			<DescriptionText text="🎨 Selected works" bold={true} />
+			<DescriptionText text="🛠 Experience / 🎨 Selected works" bold={true} />
 			{works.map((work) => (
 				<Work
 					key={uuidv4()}
 					title={work.title}
 					description={work.description}
 					image={work.image}
+					info={work.info}
 					github={work.github}
 					site={work.site}
 				/>
