@@ -11,7 +11,7 @@ const Works = () => {
 			title: "Love Together",
 			description: "Front End Developer",
 			image: "/love-together.png",
-			info: "https://www.linkedin.com/in/benjamin-marshall-609906196/#experience",
+			info: "https://www.linkedin.com/in/benjamin-marshall-609906196/",
 			site: "https://www.love-together.com/",
 		},
 		{
